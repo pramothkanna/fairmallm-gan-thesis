@@ -1,0 +1,74 @@
+               data     n  homepage_active_weeks_%  subpage_active_weeks_%  content_active_weeks_%  quiz_active_weeks_%  assessment_active_weeks_%  homepage_mean_log  subpage_mean_log  content_mean_log  all_zero_%  12_weeks_%
+       Real (train) 18170                     72.6                    50.0                    46.3                 19.0                       18.5               1.61              0.96              1.23         2.3        61.2
+LLM + D2 (proposed)  1999                     73.5                    50.3                    56.6                  7.2                        5.5               1.40              0.75              1.22         5.2        62.0
+     LLM without D2  2001                     71.2                    45.8                    51.6                  6.6                        5.2               1.33              0.66              1.07         5.6        61.5
+   MALLM-GAN (flat)   623                     71.2                    59.5                    53.7                 17.5                       12.6               1.37              1.01              1.14        10.3        70.9
+              CTGAN  2000                     71.9                    47.6                    47.5                 14.4                       17.0               1.61              0.94              1.25         0.1        59.2
+               data  click_gap_pass_minus_risk_log  quiz_week_gap_pp  LR_AUC_on_real_test
+       Real (train)                           1.02               8.6                0.793
+LLM + D2 (proposed)                           1.81               5.6                0.687
+     LLM without D2                           1.70               5.1                0.705
+   MALLM-GAN (flat)                           2.32              16.7                0.738
+              CTGAN                           0.82               4.2                0.762
+data                        Real (train)  LLM + D2 (proposed)  LLM without D2  MALLM-GAN (flat)  CTGAN
+SPD_overall                       -0.071               -0.101          -0.085            -0.056 -0.111
+EOD_overall                        0.008               -0.056          -0.035            -0.013 -0.039
+SPD_within_module_weighted         0.041                0.064           0.057             0.076  0.068
+mean_risk_F                        0.444                0.369           0.361             0.412  0.366
+mean_risk_M                        0.403                0.289           0.306             0.373  0.309
+SPD_AAA                            0.108                0.202           0.210             0.167  0.133
+SPD_BBB                            0.073                0.050           0.047             0.118  0.142
+SPD_CCC                           -0.013                0.054           0.081             0.084  0.048
+SPD_DDD                            0.076                0.079           0.069             0.053  0.046
+SPD_EEE                           -0.012                0.019           0.010            -0.012  0.008
+SPD_FFF                            0.050                0.081           0.060             0.100  0.060
+SPD_GGG                           -0.021                0.062           0.038             0.005  0.008
+col_0  share_of_men  share_of_women  dropout_rate  median_window_clicks
+row_0                                                                  
+AAA           0.026           0.022         0.247                 467.0
+BBB           0.049           0.494         0.379                 109.0
+CCC           0.182           0.059         0.476                 338.0
+DDD           0.192           0.148         0.471                 210.0
+EEE           0.163           0.023         0.300                 464.0
+FFF           0.352           0.094         0.422                 627.0
+GGG           0.036           0.158         0.368                  60.0
+             condition  SPD_overall  SPD_overall_sd   AAA   BBB   CCC   DDD   EEE    FFF    GGG  mean_abs_within_module
+     All real (18,166)        0.065           0.014 0.032 0.073 0.163 0.038 0.039 -0.036  0.056                   0.062
+          Real n=2,000        0.007           0.035 0.158 0.108 0.081 0.050 0.053 -0.012 -0.025                   0.070
+   LLM + D2 (proposed)       -0.091           0.014 0.241 0.131 0.128 0.073 0.105  0.004 -0.058                   0.106
+        LLM without D2       -0.105           0.021 0.251 0.127 0.126 0.090 0.093  0.013 -0.077                   0.111
+MALLM-GAN (flat) n=623       -0.138           0.031 0.194 0.114 0.081 0.068 0.088  0.005 -0.081                   0.090
+                 CTGAN       -0.130           0.018 0.216 0.137 0.102 0.080 0.094  0.008 -0.030                   0.095
+                run  scored_rounds  converged  best_round  min_D1  min_D2  tokens_per_s  min_per_round  final_acceptance_%  students  hours
+LLM + D2 (proposed)              9      False           3   0.777   0.497          31.0            6.3                61.2      1999   6.38
+     LLM without D2              9      False           5   0.728   0.438          32.1            6.0                61.3      2001   6.13
+   MALLM-GAN (flat)              9      False           1   0.669   0.508          19.2           22.4                57.3       623  10.01
+               data    n  AUC_TSTR  AUC_real_same_n  AUC_gap    D2  D2_real_same_n  D2_reduction  AUC_AUG  SPD_TSTR  SPD_real_same_n  SPD_AUG
+LLM + D2 (proposed) 1999     0.686            0.753   -0.067 0.582           0.765         0.182    0.752    -0.091           -0.029    0.006
+     LLM without D2 2001     0.692            0.754   -0.061 0.627           0.759         0.132    0.744    -0.105           -0.041   -0.004
+   MALLM-GAN (flat)  623     0.710            0.728   -0.018 0.631           0.685         0.054    0.732    -0.138           -0.119   -0.081
+              CTGAN 2000     0.724            0.760   -0.036 0.861           0.758        -0.102    0.761    -0.130            0.007   -0.026
+  0                                               1             2                                    3       4
+RQ1                        D2 AUC on synthetic data         ≈ 0.5                     0.58 (real 0.76)  partly
+RQ1                     Label SPD of synthetic data           ≈ 0                 -0.000 (real +0.016)     met
+RQ1                           D1 accuracy (realism)         ≈ 0.5                                 0.83 not met
+RQ1              Feedback loop reaches chance level    both ≈ 0.5        no run converged in 10 rounds not met
+RQ1      SPD / EOD of GRU trained on synthetic data           ≈ 0                      -0.091 / -0.062 not met
+RQ2             TSTR AUC close to TRTR at same size     small gap                       0.686 vs 0.753 not met
+RQ3          Accuracy cost of the fairness feedback proportionate             −0.007 AUC for −0.045 D2     met
+RQ3 Temporal format better than flattened baselines        better CTGAN 0.724, MALLM-GAN 0.710 (n=623) not met
+RQ4                      Same framework on ETB 2018    comparable       LLM run pending (data licence)    open
+                         features   AUC    SPD   EOD  mean_within_module_SPD
+                raw weekly counts 0.793 -0.067 0.007                   0.033
+counts relative to module average 0.799 -0.012 0.063                   0.044
+               data    n  D2_mean  D2_sd  D2_min  D2_max
+       Real (train)  623    0.739  0.022   0.704   0.785
+       Real (train) 1500    0.747  0.012   0.724   0.771
+LLM + D2 (proposed)  623    0.564  0.032   0.486   0.624
+LLM + D2 (proposed) 1500    0.578  0.011   0.548   0.594
+     LLM without D2  623    0.606  0.020   0.569   0.651
+     LLM without D2 1500    0.623  0.010   0.603   0.645
+   MALLM-GAN (flat)  623    0.623  0.010   0.598   0.638
+              CTGAN  623    0.848  0.012   0.825   0.876
+              CTGAN 1500    0.855  0.005   0.844   0.863
+written to results/analysis

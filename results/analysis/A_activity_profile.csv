@@ -1,0 +1,6 @@
+data,n,homepage_active_weeks_%,subpage_active_weeks_%,content_active_weeks_%,quiz_active_weeks_%,assessment_active_weeks_%,homepage_mean_log,subpage_mean_log,content_mean_log,all_zero_%,12_weeks_%
+Real (train),18170,72.6,50.0,46.3,19.0,18.5,1.61,0.96,1.23,2.3,61.2
+LLM + D2 (proposed),1999,73.5,50.3,56.6,7.2,5.5,1.4,0.75,1.22,5.2,62.0
+LLM without D2,2001,71.2,45.8,51.6,6.6,5.2,1.33,0.66,1.07,5.6,61.5
+MALLM-GAN (flat),623,71.2,59.5,53.7,17.5,12.6,1.37,1.01,1.14,10.3,70.9
+CTGAN,2000,71.9,47.6,47.5,14.4,17.0,1.61,0.94,1.25,0.1,59.2
