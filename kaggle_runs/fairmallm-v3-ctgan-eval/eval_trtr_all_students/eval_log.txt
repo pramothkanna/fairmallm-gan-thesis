@@ -1,4 +1,0 @@
-[eval] cohort=all train=22843 val=4881 test=4869 device=cpu
-[eval] utility + fairness (GRU, real test set)
-  TRTR (all real)              acc=0.812±0.002 auc=0.892 SPD=+0.049 EOD=+0.034
-[eval] done in 3.0 min -> /kaggle/working/eval_trtr_all_students
