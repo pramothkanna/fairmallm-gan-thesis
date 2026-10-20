@@ -1,0 +1,22 @@
+[eval] cohort=active train=18170 val=3866 test=3876 device=cpu
+[eval] loaded full: 623 students from /home/claude/work/sub623/run_full
+[eval] loaded no_fair: 623 students from /home/claude/work/sub623/run_no_fair
+[eval] loaded mallm_flat: 623 students from /home/claude/kres/mf/run_mallm_flat
+[eval] loaded ctgan: 623 students from /home/claude/work/sub623/run_ctgan
+[eval] utility + fairness (GRU, real test set)
+  TRTR (all real)              acc=0.768±0.005 auc=0.841 SPD=+0.036 EOD=+0.084
+  TRTR-n (real n=623)          acc=0.685±0.015 bal=0.671 f1=0.605 auc=0.740±0.012 SPD=-0.078 EOD=-0.016
+  TSTR full                    acc=0.662±0.012 bal=0.648 f1=0.578 auc=0.715±0.004 SPD=-0.146 EOD=-0.087
+  AUG real-n + full            acc=0.695±0.017 bal=0.675 f1=0.603 auc=0.747±0.012 SPD=-0.062 EOD=-0.000
+  TSTR no_fair                 acc=0.652±0.029 bal=0.644 f1=0.579 auc=0.716±0.007 SPD=-0.169 EOD=-0.110
+  AUG real-n + no_fair         acc=0.674±0.012 bal=0.672 f1=0.621 auc=0.741±0.013 SPD=-0.109 EOD=-0.036
+  TSTR mallm_flat              acc=0.676±0.020 bal=0.656 f1=0.575 auc=0.723±0.003 SPD=-0.153 EOD=-0.090
+  AUG real-n + mallm_flat      acc=0.703±0.018 bal=0.677 f1=0.595 auc=0.747±0.019 SPD=-0.052 EOD=-0.005
+  TSTR ctgan                   acc=0.679±0.016 bal=0.663 f1=0.591 auc=0.725±0.014 SPD=-0.139 EOD=-0.070
+  AUG real-n + ctgan           acc=0.682±0.039 bal=0.672 f1=0.613 auc=0.750±0.014 SPD=-0.087 EOD=-0.019
+[eval] synthetic data quality (fidelity / fairness / privacy)
+  [full] n=623 D1=0.827 D2=0.588 (real 0.701) labelSPD=-0.021 disc=0.321 W1=0.342 DCR med=4.94 (real 5.26)
+  [no_fair] n=623 D1=0.822 D2=0.555 (real 0.684) labelSPD=+0.022 disc=0.369 W1=0.359 DCR med=4.79 (real 5.26)
+  [mallm_flat] n=623 D1=0.767 D2=0.631 (real 0.730) labelSPD=+0.086 disc=0.313 W1=0.212 DCR med=5.18 (real 5.26)
+  [ctgan] n=623 D1=0.612 D2=0.845 (real 0.742) labelSPD=-0.080 disc=0.350 W1=0.079 DCR med=7.13 (real 5.26)
+[eval] done in 5.2 min -> /home/claude/work/eval_623
