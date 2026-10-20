@@ -1,0 +1,10 @@
+[eval] cohort=active train=18166 val=3899 test=3847 device=cuda
+[eval] loaded mallm_flat: 623 students from /kaggle/working/run_mallm_flat
+[eval] utility + fairness (GRU, real test set)
+  TRTR (all real)              acc=0.767±0.005 auc=0.831 SPD=+0.061 EOD=+0.065
+  TRTR-n (real n=623)          acc=0.668±0.016 bal=0.662 f1=0.606 auc=0.732±0.003 SPD=-0.117 EOD=-0.053
+  TSTR mallm_flat              acc=0.675±0.007 bal=0.647 f1=0.552 auc=0.710±0.006 SPD=-0.136 EOD=-0.095
+  AUG real-n + mallm_flat      acc=0.681±0.013 bal=0.657 f1=0.566 auc=0.731±0.009 SPD=-0.076 EOD=-0.033
+[eval] synthetic data quality (fidelity / fairness / privacy)
+  [mallm_flat] n=623 D1=0.773 D2=0.631 (real 0.700) labelSPD=+0.086 disc=0.289 W1=0.209 DCR med=5.40 (real 5.21)
+[eval] done in 1.4 min -> /kaggle/working/eval_mallm_flat

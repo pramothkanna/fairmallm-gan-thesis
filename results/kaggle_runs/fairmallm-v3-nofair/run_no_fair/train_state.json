@@ -1,0 +1,237 @@
+{
+  "next_round": 10,
+  "guidance": "- REALISM: a classifier still separates real from your students (D1 accuracy 0.91, target 0.50). Fix these differences:\n  * weekly_assessment_score (total): real 164.5 vs yours 6.5\n  * weekly_assessment_score (share of active weeks): real 0.18 vs yours 0.01\n  * weekly_assessment_score (weekly mean): real 14.2 vs yours 0.59\n  * Y=1 quiz_interactions mean per week: real 5.2 vs yours 0.01\n  * Y=0 quiz_interactions mean per week: real 9.6 vs yours 0.11\n  * Y=0 weekly_assessment_score % of weeks non-zero: real 20.9 vs yours 0.63\n  * Y=0 weekly_assessment_score mean per week: real 16.9 vs yours 0.55\n  * Y=1 quiz_interactions % of weeks non-zero: real 13.8 vs yours 0.56\n- DIVERSITY: 31 of your students were copies/duplicates and were discarded. Write new, varied students.",
+  "history": [
+    {
+      "round": 1,
+      "accepted": 48,
+      "pooled": 93,
+      "D1_acc": 0.7741935483870968,
+      "D2_auc": 0.7582846003898636,
+      "label_SPD": 0.07748538011695905,
+      "leak": "subpage_clicks (last week)",
+      "D1_top": [
+        "weekly_assessment_score (share of active weeks)",
+        "quiz_interactions (last week)",
+        "quiz_interactions (weekly mean)"
+      ],
+      "score": 0.27419354838709675,
+      "in_band": false,
+      "rejections": {
+        "copy_of_real": 8,
+        "duplicate_synthetic": 8,
+        "requested": 64,
+        "accepted": 48
+      },
+      "minutes": 5.747065412998199,
+      "tok_per_s": 34.00727019431047
+    },
+    {
+      "round": 2,
+      "accepted": 43,
+      "pooled": 91,
+      "D1_acc": 0.8076923076923077,
+      "D2_auc": 0.7086557059961316,
+      "label_SPD": 0.047388781431334626,
+      "leak": "subpage_clicks (last week)",
+      "D1_top": [
+        "weekly_assessment_score (share of active weeks)",
+        "homepage_clicks (share of active weeks)",
+        "quiz_interactions (trend)"
+      ],
+      "score": 0.3076923076923077,
+      "in_band": false,
+      "rejections": {
+        "duplicate_synthetic": 14,
+        "copy_of_real": 7,
+        "requested": 64,
+        "accepted": 43
+      },
+      "minutes": 6.185090498129527,
+      "tok_per_s": 32.852722349254016
+    },
+    {
+      "round": 3,
+      "accepted": 44,
+      "pooled": 87,
+      "D1_acc": 0.8275862068965517,
+      "D2_auc": 0.5652748414376322,
+      "label_SPD": 0.08139534883720928,
+      "leak": "homepage_clicks (weekly mean)",
+      "D1_top": [
+        "weekly_assessment_score (last week)",
+        "quiz_interactions (last week)",
+        "weekly_assessment_score (share of active weeks)"
+      ],
+      "score": 0.3275862068965517,
+      "in_band": false,
+      "rejections": {
+        "copy_of_real": 7,
+        "duplicate_synthetic": 13,
+        "requested": 64,
+        "accepted": 44
+      },
+      "minutes": 6.246798233191172,
+      "tok_per_s": 32.21860311597549
+    },
+    {
+      "round": 4,
+      "accepted": 45,
+      "pooled": 89,
+      "D1_acc": 0.7528089887640449,
+      "D2_auc": 0.7035714285714286,
+      "label_SPD": -0.09183673469387754,
+      "leak": "weekly_assessment_score (last week)",
+      "D1_top": [
+        "weekly_assessment_score (last week)",
+        "weekly_assessment_score (share of active weeks)",
+        "quiz_interactions (share of active weeks)"
+      ],
+      "score": 0.2528089887640449,
+      "in_band": false,
+      "rejections": {
+        "duplicate_synthetic": 17,
+        "copy_of_real": 2,
+        "requested": 64,
+        "accepted": 45
+      },
+      "minutes": 6.156564617156983,
+      "tok_per_s": 31.935833593976113
+    },
+    {
+      "round": 5,
+      "accepted": 36,
+      "pooled": 81,
+      "D1_acc": 0.7283950617283951,
+      "D2_auc": 0.561811505507956,
+      "label_SPD": -0.14810281517747853,
+      "leak": "quiz_interactions (trend)",
+      "D1_top": [
+        "weekly_assessment_score (trend)",
+        "homepage_clicks (share of active weeks)",
+        "weekly_assessment_score (share of active weeks)"
+      ],
+      "score": 0.22839506172839508,
+      "in_band": false,
+      "rejections": {
+        "copy_of_real": 19,
+        "duplicate_synthetic": 9,
+        "requested": 64,
+        "accepted": 36
+      },
+      "minutes": 6.4272536357243855,
+      "tok_per_s": 31.535050856509255
+    },
+    {
+      "round": 6,
+      "accepted": 54,
+      "pooled": 90,
+      "D1_acc": 0.8166666666666667,
+      "D2_auc": 0.5622519841269842,
+      "label_SPD": -0.07142857142857145,
+      "leak": "homepage_clicks (last week)",
+      "D1_top": [
+        "weekly_assessment_score (total)",
+        "weekly_assessment_score (weekly mean)",
+        "weekly_assessment_score (trend)"
+      ],
+      "score": 0.31666666666666665,
+      "in_band": false,
+      "rejections": {
+        "copy_of_real": 4,
+        "duplicate_synthetic": 4,
+        "week_count": 2,
+        "requested": 64,
+        "accepted": 54
+      },
+      "minutes": 5.559015019734701,
+      "tok_per_s": 31.68068737911525
+    },
+    {
+      "round": 7,
+      "accepted": 48,
+      "pooled": 102,
+      "D1_acc": 0.8774509803921569,
+      "D2_auc": 0.7789351851851852,
+      "label_SPD": -0.08101851851851849,
+      "leak": "quiz_interactions (trend)",
+      "D1_top": [
+        "weekly_assessment_score (weekly mean)",
+        "weekly_assessment_score (total)",
+        "weekly_assessment_score (share of active weeks)"
+      ],
+      "score": 0.37745098039215685,
+      "in_band": false,
+      "rejections": {
+        "duplicate_synthetic": 11,
+        "copy_of_real": 5,
+        "requested": 64,
+        "accepted": 48
+      },
+      "minutes": 5.934804419676463,
+      "tok_per_s": 31.609127887859746
+    },
+    {
+      "round": 8,
+      "accepted": 41,
+      "pooled": 89,
+      "D1_acc": 0.8370786516853933,
+      "D2_auc": 0.6343555093555093,
+      "label_SPD": -0.10966735966735963,
+      "leak": "oucontent_clicks (share of active weeks)",
+      "D1_top": [
+        "weekly_assessment_score (weekly mean)",
+        "weekly_assessment_score (total)",
+        "weekly_assessment_score (share of active weeks)"
+      ],
+      "score": 0.3370786516853933,
+      "in_band": false,
+      "rejections": {
+        "duplicate_synthetic": 13,
+        "copy_of_real": 10,
+        "requested": 64,
+        "accepted": 41
+      },
+      "minutes": 5.853968365987142,
+      "tok_per_s": 31.54423059587254
+    },
+    {
+      "round": 9,
+      "accepted": 31,
+      "pooled": 72,
+      "D1_acc": 0.9097222222222222,
+      "D2_auc": 0.4381270903010034,
+      "label_SPD": -0.1688963210702341,
+      "leak": "subpage_clicks (share of active weeks)",
+      "D1_top": [
+        "weekly_assessment_score (total)",
+        "weekly_assessment_score (share of active weeks)",
+        "weekly_assessment_score (weekly mean)"
+      ],
+      "score": 0.4097222222222222,
+      "in_band": false,
+      "rejections": {
+        "duplicate_synthetic": 21,
+        "copy_of_real": 10,
+        "week_count": 2,
+        "requested": 64,
+        "accepted": 31
+      },
+      "minutes": 6.045903766155243,
+      "tok_per_s": 31.5252616548637
+    }
+  ],
+  "best_score": 0.22839506172839508,
+  "best_guidance": "- REALISM: a classifier still separates real from your students (D1 accuracy 0.75, target 0.50). Fix these differences:\n  * weekly_assessment_score (last week): real 4.1 vs yours 2.7\n  * weekly_assessment_score (share of active weeks): real 0.18 vs yours 0.08\n  * quiz_interactions (share of active weeks): real 0.19 vs yours 0.06\n  * Y=1 subpage_clicks mean per week: real 3.5 vs yours 0.80\n  * Y=1 quiz_interactions mean per week: real 5.2 vs yours 1.4\n  * Y=1 weekly_assessment_score % of weeks non-zero: real 14.8 vs yours 4.4\n  * Y=1 quiz_interactions % of weeks non-zero: real 13.8 vs yours 4.1\n  * Y=0 quiz_interactions mean per week: real 9.6 vs yours 2.9\n- DIVERSITY: 19 of your students were copies/duplicates and were discarded. Write new, varied students.",
+  "best_round": 5,
+  "streak": 0,
+  "converged": false,
+  "finished": true,
+  "rejections": {
+    "duplicate_synthetic": 121,
+    "copy_of_real": 80,
+    "requested": 640,
+    "accepted": 435,
+    "week_count": 4
+  }
+}
