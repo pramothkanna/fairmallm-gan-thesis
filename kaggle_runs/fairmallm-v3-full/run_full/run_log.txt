@@ -1,0 +1,73 @@
+19:00:21 [data] cohort=active train=18166 pos=0.406 female=0.454 label_policy=parity real_D2_auc=0.758 copy_thr=1.602
+19:00:41 [LLM] HF Qwen/Qwen2.5-7B-Instruct on Tesla T4 x2
+19:02:33 [LLM] transformers 5.16.1, dtype=torch.float16, devices=['0', '1']
+19:02:33 [run] mode=full fmt=temporal optimizer=False max_new_tokens=2474
+19:02:33 
+==== ADVERSARIAL PROMPT OPTIMISATION ====
+19:07:54 [round 0] accepted=48 pooled=48 < 60 -> collecting more  rej={'copy_of_real': 6, 'duplicate_synthetic': 10, 'requested': 64, 'accepted': 48}
+19:13:51 [round 1] acc=46/64 pooled=94 D1=0.777 D2=0.682 SPD=-0.067 leak=oucontent_clicks (trend) score=0.459  (5.9 min, 34 tok/s)
+19:20:23 [round 2] acc=38/64 pooled=84 D1=0.893 D2=0.566 SPD=-0.084 leak=homepage_clicks (trend) score=0.459  (6.5 min, 32 tok/s)
+19:26:58 [round 3] acc=51/64 pooled=89 D1=0.860 D2=0.497 SPD=+0.050 leak=homepage_clicks (trend) score=0.362  (6.6 min, 31 tok/s)
+19:33:32 [round 4] acc=41/64 pooled=92 D1=0.870 D2=0.517 SPD=-0.132 leak=subpage_clicks (last week) score=0.387  (6.6 min, 31 tok/s)
+19:39:37 [round 5] acc=51/64 pooled=92 D1=0.837 D2=0.602 SPD=-0.271 leak=homepage_clicks (total) score=0.439  (6.1 min, 31 tok/s)
+19:45:48 [round 6] acc=57/64 pooled=108 D1=0.806 D2=0.591 SPD=-0.206 leak=oucontent_clicks (share of active weeks) score=0.397  (6.2 min, 31 tok/s)
+19:52:01 [round 7] acc=43/64 pooled=100 D1=0.790 D2=0.662 SPD=-0.204 leak=quiz_interactions (last week) score=0.452  (6.2 min, 30 tok/s)
+19:58:05 [round 8] acc=45/64 pooled=88 D1=0.852 D2=0.702 SPD=-0.108 leak=subpage_clicks (trend) score=0.554  (6.1 min, 30 tok/s)
+20:04:33 [round 9] acc=35/64 pooled=80 D1=0.838 D2=0.607 SPD=-0.114 leak=subpage_clicks (trend) score=0.445  (6.5 min, 30 tok/s)
+20:04:33 [train] NOT converged. Using best guidance from round 3 (score 0.362). Report this honestly.
+20:04:33 
+==== FINAL GENERATION ====
+20:04:33 [final] target per cell {(0, 0): 648, (0, 1): 443, (1, 0): 539, (1, 1): 369}, already {(0, 0): 0, (0, 1): 0, (1, 0): 0, (1, 1): 0}, zero cap {0: 39, 1: 73}
+20:11:15 [final] 45/1999  (+45; 30 tok/s)
+20:17:13 [final] 80/1999  (+35; 30 tok/s)
+20:23:24 [final] 132/1999  (+52; 30 tok/s)
+20:29:40 [final] 172/1999  (+40; 30 tok/s)
+20:35:48 [final] 214/1999  (+42; 30 tok/s)
+20:42:08 [final] 248/1999  (+34; 30 tok/s)
+20:48:17 [final] 294/1999  (+46; 30 tok/s)
+20:54:25 [final] 336/1999  (+42; 30 tok/s)
+21:00:36 [final] 383/1999  (+47; 30 tok/s)
+21:06:48 [final] 420/1999  (+37; 30 tok/s)
+21:13:04 [final] 469/1999  (+49; 30 tok/s)
+21:19:14 [final] 510/1999  (+41; 30 tok/s)
+21:25:19 [final] 557/1999  (+47; 30 tok/s)
+21:31:35 [final] 603/1999  (+46; 30 tok/s)
+21:37:49 [final] 654/1999  (+51; 30 tok/s)
+21:44:03 [final] 694/1999  (+40; 30 tok/s)
+21:50:27 [final] 728/1999  (+34; 30 tok/s)
+21:56:38 [final] 766/1999  (+38; 30 tok/s)
+22:02:59 [final] 808/1999  (+42; 30 tok/s)
+22:10:17 [final] 840/1999  (+32; 30 tok/s)
+22:16:19 [final] 878/1999  (+38; 30 tok/s)
+22:22:32 [final] 924/1999  (+46; 30 tok/s)
+22:29:08 [final] 955/1999  (+31; 30 tok/s)
+22:35:11 [final] 1002/1999  (+47; 30 tok/s)
+22:41:24 [final] 1042/1999  (+40; 30 tok/s)
+22:47:35 [final] 1087/1999  (+45; 30 tok/s)
+22:53:37 [final] 1131/1999  (+44; 30 tok/s)
+22:59:58 [final] 1161/1999  (+30; 30 tok/s)
+23:05:53 [final] 1203/1999  (+42; 30 tok/s)
+23:12:06 [final] 1249/1999  (+46; 30 tok/s)
+23:18:47 [final] 1279/1999  (+30; 30 tok/s)
+23:24:57 [final] 1316/1999  (+37; 30 tok/s)
+23:31:35 [final] 1356/1999  (+40; 30 tok/s)
+23:37:48 [final] 1401/1999  (+45; 30 tok/s)
+23:44:03 [final] 1437/1999  (+36; 30 tok/s)
+23:50:10 [final] 1468/1999  (+31; 30 tok/s)
+23:56:14 [final] 1512/1999  (+44; 30 tok/s)
+00:02:45 [final] 1546/1999  (+34; 30 tok/s)
+00:08:43 [final] 1579/1999  (+33; 30 tok/s)
+00:14:43 [final] 1615/1999  (+36; 30 tok/s)
+00:21:04 [final] 1652/1999  (+37; 30 tok/s)
+00:26:59 [final] 1687/1999  (+35; 30 tok/s)
+00:33:18 [final] 1715/1999  (+28; 30 tok/s)
+00:39:29 [final] 1754/1999  (+39; 30 tok/s)
+00:45:38 [final] 1794/1999  (+40; 30 tok/s)
+00:51:58 [final] 1830/1999  (+36; 30 tok/s)
+00:58:17 [final] 1862/1999  (+32; 30 tok/s)
+01:04:17 [final] 1902/1999  (+40; 30 tok/s)
+01:10:18 [final] 1940/1999  (+38; 30 tok/s)
+01:16:18 [final] 1982/1999  (+42; 30 tok/s)
+01:22:14 [final] 1999/1999  (+17; 30 tok/s)
+01:22:15 [final] saved 1999 students. check: {"mode": "full", "cohort": "active", "n": 1999, "D1_acc": 0.8274137068534267, "D2_auc": 0.5885857254186233, "D2_leak": "weekly_assessment_score (share of active weeks)", "real_D2_auc": 0.7579634985137488, "label_SPD_synth": -0.00033816932289415513, "label_SPD_real": 0.016389113825358792, "female_rate": 0.4542271135567784, "pos_rate": 0.4062031015507754, "pos_rate_F": 0.4063876651982379, "pos_rate_M": 0.4060494958753437, "weeks": {"11": 759, "12": 1240}, "all_zero_share": {"0": 0.02527379949452401, "1": 0.08990147783251232}}
+01:22:15 [run] done in 6.38 h

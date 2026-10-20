@@ -1,0 +1,10 @@
+[eval] cohort=active train=18166 val=3899 test=3847 device=cpu
+[eval] loaded ctgan: 2000 students from /kaggle/working/run_ctgan
+[eval] utility + fairness (GRU, real test set)
+  TRTR (all real)              acc=0.771±0.002 auc=0.831 SPD=+0.065 EOD=+0.075
+  TRTR-n (real n=2000)         acc=0.697±0.027 bal=0.678 f1=0.600 auc=0.760±0.010 SPD=+0.007 EOD=+0.042
+  TSTR ctgan                   acc=0.674±0.013 bal=0.661 f1=0.595 auc=0.724±0.010 SPD=-0.130 EOD=-0.066
+  AUG real-n + ctgan           acc=0.684±0.021 bal=0.682 f1=0.635 auc=0.761±0.007 SPD=-0.026 EOD=+0.017
+[eval] synthetic data quality (fidelity / fairness / privacy)
+  [ctgan] n=2000 D1=0.601 D2=0.861 (real 0.777) labelSPD=-0.099 disc=0.430 W1=0.068 DCR med=7.05 (real 5.21)
+[eval] done in 5.4 min -> /kaggle/working/eval_ctgan
