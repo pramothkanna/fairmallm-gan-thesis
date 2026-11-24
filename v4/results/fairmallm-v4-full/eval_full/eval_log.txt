@@ -1,0 +1,10 @@
+[eval] cohort=active train=18166 val=3899 test=3847 device=cuda
+[eval] loaded full: 1999 students from /kaggle/working/run_full
+[eval] utility + fairness (GRU, real test set)
+  TRTR (all real)              acc=0.767±0.005 auc=0.831 SPD=+0.061 EOD=+0.065
+  TRTR-n (real n=1999)         acc=0.711±0.018 bal=0.690 f1=0.619 auc=0.761±0.019 SPD=+0.016 EOD=+0.045
+  TSTR full                    acc=0.666±0.012 bal=0.651 f1=0.581 auc=0.719±0.002 SPD=-0.121 EOD=-0.071
+  AUG real-n + full            acc=0.689±0.010 bal=0.688 f1=0.642 auc=0.767±0.012 SPD=-0.010 EOD=+0.024
+[eval] synthetic data quality (fidelity / fairness / privacy)
+  [full] n=1999 D1=0.684 D2=0.602 (real 0.765) labelSPD=-0.000 disc=0.372 W1=0.145 DCR med=5.67 (real 5.21)
+[eval] done in 1.6 min -> /kaggle/working/eval_full

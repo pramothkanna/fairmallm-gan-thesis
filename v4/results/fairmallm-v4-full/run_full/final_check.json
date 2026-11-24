@@ -1,0 +1,29 @@
+{
+  "mode": "full",
+  "cohort": "active",
+  "n": 1999,
+  "D1_acc": 0.6913456728364182,
+  "D2_auc": 0.6080284425637071,
+  "D2_leak": "weekly_assessment_score (weekly mean)",
+  "real_D2_auc": 0.7579634985137488,
+  "label_SPD_synth": -0.00033816932289415513,
+  "label_SPD_real": 0.016389113825358792,
+  "female_rate": 0.4542271135567784,
+  "pos_rate": 0.4062031015507754,
+  "pos_rate_F": 0.4063876651982379,
+  "pos_rate_M": 0.4060494958753437,
+  "weeks": {
+    "11": 756,
+    "12": 1243
+  },
+  "all_zero_share": {
+    "0": 0.0,
+    "1": 0.011083743842364532
+  },
+  "qz_active_weeks_pct": 18.431473829201103,
+  "sc_active_weeks_pct": 18.577823691460054,
+  "real_qz_active_weeks_pct": 18.997852948285914,
+  "real_sc_active_weeks_pct": 18.422936010275514,
+  "plan_recall_final": 1.0,
+  "plan_mismatch_final": 0
+}

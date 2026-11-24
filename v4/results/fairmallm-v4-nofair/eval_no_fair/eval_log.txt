@@ -1,0 +1,10 @@
+[eval] cohort=active train=18166 val=3899 test=3847 device=cuda
+[eval] loaded no_fair: 2001 students from /kaggle/working/run_no_fair
+[eval] utility + fairness (GRU, real test set)
+  TRTR (all real)              acc=0.767±0.005 auc=0.831 SPD=+0.061 EOD=+0.065
+  TRTR-n (real n=2001)         acc=0.667±0.014 bal=0.669 f1=0.626 auc=0.742±0.004 SPD=-0.092 EOD=-0.023
+  TSTR no_fair                 acc=0.692±0.011 bal=0.661 f1=0.562 auc=0.736±0.006 SPD=-0.063 EOD=-0.029
+  AUG real-n + no_fair         acc=0.717±0.008 bal=0.704 f1=0.646 auc=0.776±0.005 SPD=+0.056 EOD=+0.065
+[eval] synthetic data quality (fidelity / fairness / privacy)
+  [no_fair] n=2001 D1=0.711 D2=0.716 (real 0.774) labelSPD=+0.017 disc=0.390 W1=0.203 DCR med=5.42 (real 5.21)
+[eval] done in 1.6 min -> /kaggle/working/eval_no_fair

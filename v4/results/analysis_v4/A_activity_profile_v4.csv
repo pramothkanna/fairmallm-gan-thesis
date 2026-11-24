@@ -1,0 +1,7 @@
+data,n,homepage_active_weeks_%,subpage_active_weeks_%,content_active_weeks_%,quiz_active_weeks_%,assessment_active_weeks_%,quiz_mean_when_active,score_mean_when_submitted,homepage_mean_log,subpage_mean_log,content_mean_log,all_zero_%
+Real (train),18170,72.6,50.0,46.3,19.0,18.5,41.0,76.9,1.61,0.96,1.23,2.3
+v4.3 + D2 (proposed),1999,78.1,52.1,56.7,18.4,18.6,42.4,66.9,1.57,0.83,1.33,0.5
+v4.3 without D2,2001,70.0,44.1,47.7,19.8,18.3,43.9,64.6,1.28,0.63,1.01,1.4
+v3 + D2,1999,73.5,50.3,56.6,7.2,5.5,21.9,73.7,1.4,0.75,1.22,5.2
+v3 without D2,2001,71.2,45.8,51.6,6.6,5.2,24.4,75.8,1.33,0.66,1.07,5.6
+CTGAN,2000,71.9,47.6,47.5,14.4,17.0,36.4,74.9,1.61,0.94,1.25,0.1

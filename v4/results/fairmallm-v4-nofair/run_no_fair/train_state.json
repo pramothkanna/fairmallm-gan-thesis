@@ -1,0 +1,317 @@
+{
+  "next_round": 10,
+  "guidance": "- REALISM: a classifier still separates real from your students (D1 accuracy 0.71, target 0.50). Fix these differences:\n  * weekly_assessment_score (share of active weeks): real 0.18 vs yours 0.23\n  * subpage_clicks (share of active weeks): real 0.50 vs yours 0.55\n  * weekly_assessment_score (last week): real 4.1 vs yours 4.1\n  * Y=1 subpage_clicks mean per week: real 3.5 vs yours 1.0\n  * Y=1 homepage_clicks mean per week: real 6.2 vs yours 2.3\n  * Y=0 oucontent_clicks mean per week: real 15.9 vs yours 8.3\n  * Y=0 subpage_clicks mean per week: real 5.5 vs yours 3.1\n  * Y=1 subpage_clicks % of weeks non-zero: real 39.1 vs yours 22.0\n- ACTIVITY: quiz interactions are non-zero in 26% of your weeks (real 19%), assessment scores in 23% (real 18%).\n  * You filled 100% of the planned qz/sc weeks; 0 students ignored their plan and were discarded. Every planned qz week needs qz > 0 and every planned sc week a score 1-100.\n- DIVERSITY: 2 of your students were copies/duplicates and were discarded. Write new, varied students.",
+  "history": [
+    {
+      "round": 0,
+      "accepted": 61,
+      "pooled": 61,
+      "D1_acc": 0.7704918032786885,
+      "D2_auc": 0.6875,
+      "qz_active_pct": 19.54674220963173,
+      "sc_active_pct": 18.413597733711047,
+      "plan_recall": 1.0,
+      "label_SPD": 0.27370689655172414,
+      "leak": "oucontent_clicks (share of active weeks)",
+      "D1_top": [
+        "oucontent_clicks (share of active weeks)",
+        "weekly_assessment_score (share of active weeks)",
+        "homepage_clicks (weekly mean)"
+      ],
+      "score": 0.2704918032786885,
+      "in_band": false,
+      "rejections": {
+        "plan_n": 62,
+        "plan_recall_sum": 62.0,
+        "plan_extra_weeks": 0,
+        "week_count": 2,
+        "copy_of_real": 1,
+        "requested": 64,
+        "accepted": 61
+      },
+      "minutes": 5.300703648726145,
+      "tok_per_s": 35.073577585404756
+    },
+    {
+      "round": 1,
+      "accepted": 64,
+      "pooled": 64,
+      "D1_acc": 0.6875,
+      "D2_auc": 0.8178137651821862,
+      "qz_active_pct": 20.889487870619945,
+      "sc_active_pct": 19.40700808625337,
+      "plan_recall": 1.0,
+      "label_SPD": -0.02834008097165991,
+      "leak": "subpage_clicks (trend)",
+      "D1_top": [
+        "oucontent_clicks (share of active weeks)",
+        "quiz_interactions (share of active weeks)",
+        "weekly_assessment_score (share of active weeks)"
+      ],
+      "score": 0.1875,
+      "in_band": false,
+      "rejections": {
+        "plan_n": 64,
+        "plan_recall_sum": 64.0,
+        "plan_extra_weeks": 0,
+        "requested": 64,
+        "accepted": 64
+      },
+      "minutes": 6.312939743200938,
+      "tok_per_s": 32.50700554758085
+    },
+    {
+      "round": 2,
+      "accepted": 63,
+      "pooled": 63,
+      "D1_acc": 0.6587301587301587,
+      "D2_auc": 0.7438271604938271,
+      "qz_active_pct": 21.074380165289256,
+      "sc_active_pct": 20.110192837465565,
+      "plan_recall": 1.0,
+      "label_SPD": -0.1296296296296296,
+      "leak": "subpage_clicks (trend)",
+      "D1_top": [
+        "weekly_assessment_score (share of active weeks)",
+        "homepage_clicks (weekly mean)",
+        "weekly_assessment_score (weekly mean)"
+      ],
+      "score": 0.15873015873015872,
+      "in_band": false,
+      "rejections": {
+        "plan_n": 61,
+        "plan_recall_sum": 61.0,
+        "plan_extra_weeks": 0,
+        "copy_of_real": 1,
+        "plan_unmatched_header": 3,
+        "requested": 64,
+        "accepted": 63
+      },
+      "minutes": 6.057001944382986,
+      "tok_per_s": 32.012908258955825
+    },
+    {
+      "round": 3,
+      "accepted": 63,
+      "pooled": 63,
+      "D1_acc": 0.6746031746031746,
+      "D2_auc": 0.8589473684210527,
+      "qz_active_pct": 20.98092643051771,
+      "sc_active_pct": 18.52861035422343,
+      "plan_recall": 1.0,
+      "label_SPD": 0.12842105263157894,
+      "leak": "quiz_interactions (trend)",
+      "D1_top": [
+        "oucontent_clicks (share of active weeks)",
+        "homepage_clicks (weekly mean)",
+        "homepage_clicks (total)"
+      ],
+      "score": 0.17460317460317465,
+      "in_band": false,
+      "rejections": {
+        "plan_n": 64,
+        "plan_recall_sum": 64.0,
+        "plan_extra_weeks": 0,
+        "copy_of_real": 1,
+        "requested": 64,
+        "accepted": 63
+      },
+      "minutes": 6.356157688299815,
+      "tok_per_s": 31.525010868427888
+    },
+    {
+      "round": 4,
+      "accepted": 59,
+      "pooled": 122,
+      "D1_acc": 0.7336065573770492,
+      "D2_auc": 0.6797921793820072,
+      "qz_active_pct": 19.789473684210527,
+      "sc_active_pct": 17.75438596491228,
+      "plan_recall": 1.0,
+      "label_SPD": -0.004922067268252672,
+      "leak": "subpage_clicks (last week)",
+      "D1_top": [
+        "homepage_clicks (weekly mean)",
+        "homepage_clicks (total)",
+        "oucontent_clicks (share of active weeks)"
+      ],
+      "score": 0.23360655737704916,
+      "in_band": false,
+      "rejections": {
+        "plan_n": 61,
+        "plan_recall_sum": 61.0,
+        "plan_extra_weeks": 0,
+        "copy_of_real": 1,
+        "week_count": 3,
+        "duplicate_synthetic": 1,
+        "requested": 64,
+        "accepted": 59
+      },
+      "minutes": 5.851068830490112,
+      "tok_per_s": 31.65673902055957
+    },
+    {
+      "round": 5,
+      "accepted": 62,
+      "pooled": 62,
+      "D1_acc": 0.6612903225806451,
+      "D2_auc": 0.6010416666666667,
+      "qz_active_pct": 14.738292011019283,
+      "sc_active_pct": 17.21763085399449,
+      "plan_recall": 1.0,
+      "label_SPD": 0.027083333333333348,
+      "leak": "quiz_interactions (trend)",
+      "D1_top": [
+        "subpage_clicks (share of active weeks)",
+        "subpage_clicks (total)",
+        "quiz_interactions (share of active weeks)"
+      ],
+      "score": 0.16129032258064513,
+      "in_band": false,
+      "rejections": {
+        "plan_n": 64,
+        "plan_recall_sum": 64.0,
+        "plan_extra_weeks": 0,
+        "copy_of_real": 1,
+        "duplicate_synthetic": 1,
+        "requested": 64,
+        "accepted": 62
+      },
+      "minutes": 6.234349985917409,
+      "tok_per_s": 31.535754607578077
+    },
+    {
+      "round": 6,
+      "accepted": 61,
+      "pooled": 61,
+      "D1_acc": 0.7049180327868853,
+      "D2_auc": 0.6901098901098901,
+      "qz_active_pct": 16.43258426966292,
+      "sc_active_pct": 18.679775280898877,
+      "plan_recall": 1.0,
+      "label_SPD": 0.05274725274725267,
+      "leak": "homepage_clicks (trend)",
+      "D1_top": [
+        "subpage_clicks (share of active weeks)",
+        "subpage_clicks (last week)",
+        "subpage_clicks (weekly mean)"
+      ],
+      "score": 0.20491803278688525,
+      "in_band": false,
+      "rejections": {
+        "plan_n": 62,
+        "plan_recall_sum": 62.0,
+        "plan_extra_weeks": 0,
+        "week_count": 2,
+        "copy_of_real": 1,
+        "requested": 64,
+        "accepted": 61
+      },
+      "minutes": 6.211377418041229,
+      "tok_per_s": 31.37938917500602
+    },
+    {
+      "round": 7,
+      "accepted": 64,
+      "pooled": 64,
+      "D1_acc": 0.796875,
+      "D2_auc": 0.6931372549019608,
+      "qz_active_pct": 18.120805369127517,
+      "sc_active_pct": 17.315436241610737,
+      "plan_recall": 1.0,
+      "label_SPD": -0.2254901960784314,
+      "leak": "quiz_interactions (trend)",
+      "D1_top": [
+        "subpage_clicks (weekly mean)",
+        "subpage_clicks (total)",
+        "homepage_clicks (share of active weeks)"
+      ],
+      "score": 0.296875,
+      "in_band": false,
+      "rejections": {
+        "plan_n": 64,
+        "plan_recall_sum": 64.0,
+        "plan_extra_weeks": 0,
+        "requested": 64,
+        "accepted": 64
+      },
+      "minutes": 5.901135925451914,
+      "tok_per_s": 31.39811332490748
+    },
+    {
+      "round": 8,
+      "accepted": 63,
+      "pooled": 63,
+      "D1_acc": 0.7857142857142857,
+      "D2_auc": 0.7930622009569378,
+      "qz_active_pct": 20.759837177747624,
+      "sc_active_pct": 18.724559023066487,
+      "plan_recall": 1.0,
+      "label_SPD": -0.17105263157894735,
+      "leak": "sequence length",
+      "D1_top": [
+        "oucontent_clicks (share of active weeks)",
+        "subpage_clicks (trend)",
+        "subpage_clicks (last week)"
+      ],
+      "score": 0.2857142857142857,
+      "in_band": false,
+      "rejections": {
+        "plan_n": 64,
+        "plan_recall_sum": 64.0,
+        "plan_extra_weeks": 0,
+        "duplicate_synthetic": 1,
+        "requested": 64,
+        "accepted": 63
+      },
+      "minutes": 6.226302270094553,
+      "tok_per_s": 31.32506062077138
+    },
+    {
+      "round": 9,
+      "accepted": 62,
+      "pooled": 62,
+      "D1_acc": 0.7096774193548387,
+      "D2_auc": 0.8760416666666667,
+      "qz_active_pct": 25.774647887323944,
+      "sc_active_pct": 22.676056338028168,
+      "plan_recall": 1.0,
+      "label_SPD": 0.07708333333333334,
+      "leak": "quiz_interactions (total)",
+      "D1_top": [
+        "weekly_assessment_score (share of active weeks)",
+        "subpage_clicks (share of active weeks)",
+        "weekly_assessment_score (last week)"
+      ],
+      "score": 0.20967741935483875,
+      "in_band": false,
+      "rejections": {
+        "plan_n": 64,
+        "plan_recall_sum": 64.0,
+        "plan_extra_weeks": 0,
+        "copy_of_real": 2,
+        "requested": 64,
+        "accepted": 62
+      },
+      "minutes": 5.967670635382334,
+      "tok_per_s": 31.375350313229962
+    }
+  ],
+  "best_score": 0.15873015873015872,
+  "best_guidance": "- REALISM: a classifier still separates real from your students (D1 accuracy 0.69, target 0.50). Fix these differences:\n  * oucontent_clicks (share of active weeks): real 0.46 vs yours 0.70\n  * quiz_interactions (share of active weeks): real 0.19 vs yours 0.21\n  * weekly_assessment_score (share of active weeks): real 0.18 vs yours 0.20\n  * Y=1 students with no activity at all: real 6% vs yours 0%\n  * Y=1 subpage_clicks mean per week: real 3.5 vs yours 0.54\n  * Y=1 oucontent_clicks mean per week: real 7.8 vs yours 1.2\n  * Y=1 quiz_interactions mean per week: real 5.2 vs yours 1.6\n  * Y=1 homepage_clicks mean per week: real 6.2 vs yours 3.1\n- ACTIVITY: quiz interactions are non-zero in 21% of your weeks (real 19%), assessment scores in 19% (real 18%).\n  * You filled 100% of the planned qz/sc weeks; 0 students ignored their plan and were discarded. Every planned qz week needs qz > 0 and every planned sc week a score 1-100.",
+  "best_round": 2,
+  "streak": 0,
+  "converged": false,
+  "finished": true,
+  "rejections": {
+    "plan_n": 630,
+    "plan_recall_sum": 630.0,
+    "plan_extra_weeks": 0,
+    "week_count": 7,
+    "copy_of_real": 8,
+    "requested": 640,
+    "accepted": 622,
+    "plan_unmatched_header": 3,
+    "duplicate_synthetic": 3
+  }
+}

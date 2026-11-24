@@ -1,0 +1,56 @@
+10:08:36 [data] cohort=active train=18166 pos=0.406 female=0.454 label_policy=parity real_D2_auc=0.758 copy_thr=1.602
+10:08:55 [LLM] HF Qwen/Qwen2.5-7B-Instruct on Tesla T4 x2
+10:10:44 [LLM] transformers 5.16.1, dtype=torch.float16, devices=['0', '1']
+10:10:45 [LLM] plan constraint tokens: digits=[15, 16, 17, 18, 19, 20, 21, 22, 23, 24] comma-start tokens=308
+10:10:45 [run] v4.3 plan_mode=constrained mode=full fmt=temporal optimizer=False activity_plan=True max_new_tokens=2474
+10:10:45 
+==== ADVERSARIAL PROMPT OPTIMISATION ====
+10:16:39 [round 0] acc=62/64 pooled=62 D1=0.669 D2=0.784 SPD=+0.223 leak=homepage_clicks (last week) qz%=16.2 sc%=17.6 plan=1.0 score=0.454  (5.9 min, 31 tok/s)
+10:23:56 [round 1] acc=61/64 pooled=61 D1=0.664 D2=0.418 SPD=+0.003 leak=oucontent_clicks (share of active weeks) qz%=24.9 sc%=19.8 plan=1.0 score=0.246  (7.3 min, 29 tok/s)
+10:30:48 [round 2] acc=62/64 pooled=62 D1=0.573 D2=0.589 SPD=-0.125 leak=quiz_interactions (share of active weeks) qz%=18.0 sc%=17.6 plan=1.0 score=0.161 IN-BAND (6.9 min, 29 tok/s)
+10:37:23 [round 3] acc=62/64 pooled=62 D1=0.645 D2=0.758 SPD=+0.145 leak=subpage_clicks (last week) qz%=18.2 sc%=17.3 plan=1.0 score=0.403  (6.6 min, 29 tok/s)
+10:43:57 [round 4] acc=62/64 pooled=62 D1=0.758 D2=0.696 SPD=-0.131 leak=oucontent_clicks (trend) qz%=17.5 sc%=17.4 plan=1.0 score=0.454  (6.6 min, 29 tok/s)
+10:50:45 [round 5] acc=59/64 pooled=121 D1=0.740 D2=0.516 SPD=-0.045 leak=quiz_interactions (last week) qz%=18.1 sc%=18.5 plan=1.0 score=0.256  (6.8 min, 28 tok/s)
+10:57:26 [round 6] acc=63/64 pooled=63 D1=0.722 D2=0.754 SPD=+0.050 leak=quiz_interactions (last week) qz%=24.8 sc%=19.3 plan=1.0 score=0.476  (6.7 min, 28 tok/s)
+11:04:30 [round 7] acc=63/64 pooled=63 D1=0.667 D2=0.512 SPD=-0.248 leak=quiz_interactions (last week) qz%=15.6 sc%=17.6 plan=1.0 score=0.179  (7.1 min, 28 tok/s)
+11:11:13 [round 8] acc=61/64 pooled=61 D1=0.639 D2=0.648 SPD=-0.183 leak=homepage_clicks (trend) qz%=19.5 sc%=18.9 plan=1.0 score=0.287  (6.7 min, 28 tok/s)
+11:18:14 [round 9] acc=57/64 pooled=118 D1=0.648 D2=0.585 SPD=-0.080 leak=oucontent_clicks (share of active weeks) qz%=20.0 sc%=18.5 plan=1.0 score=0.234  (7.0 min, 28 tok/s)
+11:18:14 [train] NOT converged. Using best guidance from round 2 (score 0.161). Report this honestly.
+11:18:14 
+==== FINAL GENERATION ====
+11:18:14 [final] target per cell {(0, 0): 648, (0, 1): 443, (1, 0): 539, (1, 1): 369}, already {(0, 0): 0, (0, 1): 0, (1, 0): 0, (1, 1): 0}, zero cap {0: 15, 1: 56}
+11:25:00 [final] 63/1999  (+63; 28 tok/s)
+11:31:58 [final] 127/1999  (+64; 28 tok/s)
+11:38:34 [final] 188/1999  (+61; 28 tok/s)
+11:45:09 [final] 249/1999  (+61; 28 tok/s)
+11:52:08 [final] 312/1999  (+63; 28 tok/s)
+11:58:48 [final] 375/1999  (+63; 28 tok/s)
+12:05:36 [final] 438/1999  (+63; 28 tok/s)
+12:12:19 [final] 499/1999  (+61; 28 tok/s)
+12:18:52 [final] 560/1999  (+61; 28 tok/s)
+12:25:30 [final] 622/1999  (+62; 28 tok/s)
+12:32:22 [final] 686/1999  (+64; 28 tok/s)
+12:38:59 [final] 749/1999  (+63; 28 tok/s)
+12:45:38 [final] 813/1999  (+64; 28 tok/s)
+12:52:21 [final] 877/1999  (+64; 28 tok/s)
+12:59:03 [final] 937/1999  (+60; 28 tok/s)
+13:05:58 [final] 1000/1999  (+63; 28 tok/s)
+13:12:52 [final] 1060/1999  (+60; 28 tok/s)
+13:19:44 [final] 1122/1999  (+62; 28 tok/s)
+13:26:43 [final] 1184/1999  (+62; 28 tok/s)
+13:33:21 [final] 1246/1999  (+62; 28 tok/s)
+13:40:36 [final] 1305/1999  (+59; 28 tok/s)
+13:47:35 [final] 1367/1999  (+62; 28 tok/s)
+13:54:27 [final] 1431/1999  (+64; 28 tok/s)
+14:01:46 [final] 1492/1999  (+61; 28 tok/s)
+14:08:32 [final] 1555/1999  (+63; 28 tok/s)
+14:15:33 [final] 1619/1999  (+64; 28 tok/s)
+14:22:14 [final] 1680/1999  (+61; 28 tok/s)
+14:28:46 [final] 1743/1999  (+63; 28 tok/s)
+14:35:41 [final] 1805/1999  (+62; 28 tok/s)
+14:42:45 [final] 1869/1999  (+64; 28 tok/s)
+14:49:31 [final] 1932/1999  (+63; 28 tok/s)
+14:56:07 [final] 1995/1999  (+63; 28 tok/s)
+15:02:43 [final] 1999/1999  (+4; 28 tok/s)
+15:02:43 [final] saved 1999 students. check: {"mode": "full", "cohort": "active", "n": 1999, "D1_acc": 0.6913456728364182, "D2_auc": 0.6080284425637071, "D2_leak": "weekly_assessment_score (weekly mean)", "real_D2_auc": 0.7579634985137488, "label_SPD_synth": -0.00033816932289415513, "label_SPD_real": 0.016389113825358792, "female_rate": 0.4542271135567784, "pos_rate": 0.4062031015507754, "pos_rate_F": 0.4063876651982379, "pos_rate_M": 0.4060494958753437, "weeks": {"11": 756, "12": 1243}, "all_zero_share": {"0": 0.0, "1": 0.011083743842364532}, "qz_active_weeks_pct": 18.431473829201103, "sc_active_weeks_pct": 18.577823691460054, "real_qz_active_weeks_pct": 18.997852948285914, "real_sc_active_weeks_pct": 18.422936010275514, "plan_recall_final": 1.0, "plan_mismatch_final": 0}
+15:02:43 [run] done in 4.91 h

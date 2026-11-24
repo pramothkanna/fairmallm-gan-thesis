@@ -1,0 +1,12 @@
+{
+  "plan_n": 2077,
+  "plan_recall_sum": 2077.0,
+  "plan_extra_weeks": 0,
+  "copy_of_real": 15,
+  "requested": 2112,
+  "accepted": 1999,
+  "plan_unmatched_header": 10,
+  "week_count": 25,
+  "duplicate_synthetic": 19,
+  "cell_full": 54
+}

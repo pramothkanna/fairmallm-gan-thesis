@@ -1,0 +1,29 @@
+{
+  "mode": "no_fair",
+  "cohort": "active",
+  "n": 2001,
+  "D1_acc": 0.7143928035982009,
+  "D2_auc": 0.7145682974890895,
+  "D2_leak": "subpage_clicks (total)",
+  "real_D2_auc": 0.7579634985137488,
+  "label_SPD_synth": 0.016779699948016757,
+  "label_SPD_real": 0.016389113825358792,
+  "female_rate": 0.4542728635682159,
+  "pos_rate": 0.4062968515742129,
+  "pos_rate_F": 0.39713971397139713,
+  "pos_rate_M": 0.4139194139194139,
+  "weeks": {
+    "11": 785,
+    "12": 1216
+  },
+  "all_zero_share": {
+    "0": 0.0,
+    "1": 0.03567035670356704
+  },
+  "qz_active_weeks_pct": 19.826064493907953,
+  "sc_active_weeks_pct": 18.323502819993973,
+  "real_qz_active_weeks_pct": 18.997852948285914,
+  "real_sc_active_weeks_pct": 18.422936010275514,
+  "plan_recall_final": 0.9995196926032661,
+  "plan_mismatch_final": 1
+}
